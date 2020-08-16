@@ -75,7 +75,7 @@
       audio.currentTime = 0
       audio.play()
     }
-    //遍历
+    //遍历所有 .key 属性的元素
     const keys = Array.from(document.querySelectorAll('.key'))
     keys.forEach(key => key.addEventListener('transitionend', removeTransition))
 
