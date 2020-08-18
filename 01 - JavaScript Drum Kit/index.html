@@ -68,6 +68,7 @@
     }
     function playSound(e) {
       //keyCode已经不推荐使用, 需要替换一下
+      //可以换成 .key, 但需要了解下浏览器兼容性
       const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`)
       const key = document.querySelector(`div[data-key="${e.keyCode}"]`)
       if (!audio) return;
